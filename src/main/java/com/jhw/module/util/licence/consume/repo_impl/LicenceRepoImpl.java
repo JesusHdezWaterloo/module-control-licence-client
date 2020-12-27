@@ -39,7 +39,7 @@ public class LicenceRepoImpl extends ConsumerRepoTemplate<LicenceDomain> impleme
 
     @Override
     public int daysUntilActivation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return template().getForObject(urlGeneral + LICENCE_DAYS_LEFT_PATH, Integer.class);
     }
 
     @Override
