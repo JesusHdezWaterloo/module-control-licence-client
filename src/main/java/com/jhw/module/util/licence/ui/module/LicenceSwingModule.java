@@ -9,6 +9,7 @@ import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.module.util.licence.consume.module.LicenceConsumeCoreModule;
 import com.jhw.module.util.licence.core.usecase_def.LicenceUseCase;
+import com.jhw.module.util.licence.service.ResourceKeys;
 import com.jhw.module.util.licence.service.ResourceServiceClientImplementation;
 import com.jhw.module.util.licence.services.LicenceResourceService;
 import com.jhw.swing.material.standards.MaterialIcons;
@@ -16,8 +17,6 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class LicenceSwingModule extends DefaultAbstractSwingMainModule {
-
-    public static final String MSG_DAYS_TO_ACTIVATE = "msg.licence.days_to_activate";
 
     private final LicenceModuleNavigator navigator = new LicenceModuleNavigator();
 
@@ -35,7 +34,7 @@ public class LicenceSwingModule extends DefaultAbstractSwingMainModule {
 
         LicenceResourceService.init();
         ResourceServiceClientImplementation.init();
-        
+
         return new LicenceSwingModule();
     }
 
@@ -47,7 +46,11 @@ public class LicenceSwingModule extends DefaultAbstractSwingMainModule {
     private void registerLicence(AbstractSwingApplication app) {
         DashBoardSimple dash = app.rootView().dashboard();
 
-        dash.putKeyValue(DashboardConstants.DOWN_LICENCE, new AbstractAction(0 + " " + Resource.getString(MSG_DAYS_TO_ACTIVATE), MaterialIcons.SECURITY.deriveIcon(16)) {
+        dash.putKeyValue(DashboardConstants.DOWN_LICENCE,
+                new AbstractAction(
+                        licenceUC.daysUntilActivation() + " " + Resource.getString(ResourceKeys.MSG_DAY_TO_ACTIVE
+                ),
+                        MaterialIcons.SECURITY.deriveIcon(16)) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Notification.showConfirmDialog(NotificationsGeneralType.CONFIRM_ERROR, "ACTIVAR LICENCIA");
