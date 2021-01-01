@@ -38,7 +38,7 @@ dependencies {
     implementation project(':utils-files')
     implementation project(':module-util-rest_config')
     
-    implementation project(':module-util-licence-standard')
+    implementation project(':module-control-licence-standard')
     
 }
 
