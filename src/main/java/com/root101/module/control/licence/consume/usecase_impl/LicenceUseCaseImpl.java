@@ -7,6 +7,8 @@ package com.root101.module.control.licence.consume.usecase_impl;
 
 import com.root101.clean.core.app.usecase.DefaultCRUDUseCase;
 import com.root101.module.control.licence.consume.module.LicenceConsumeCoreModule;
+import com.root101.module.control.licence.consume.repo_impl.LicenceRepoImpl;
+import com.root101.module.control.licence.consume.usecase_def.LicenceUseCaseConsume;
 import com.root101.module.control.licence.core.domain.*;
 
 /**

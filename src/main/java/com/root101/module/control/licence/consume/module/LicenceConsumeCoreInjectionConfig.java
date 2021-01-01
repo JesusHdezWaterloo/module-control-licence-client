@@ -2,6 +2,8 @@ package com.root101.module.control.licence.consume.module;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
+import com.root101.module.control.licence.consume.usecase_def.LicenceUseCaseConsume;
+import com.root101.module.control.licence.consume.usecase_impl.LicenceUseCaseImpl;
 import com.root101.module.control.licence.core.usecase_def.*;
 
 /**
