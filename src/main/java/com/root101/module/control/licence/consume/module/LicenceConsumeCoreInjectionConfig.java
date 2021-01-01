@@ -1,10 +1,8 @@
-package com.jhw.module.util.licence.consume.module;
+package com.root101.module.control.licence.consume.module;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
-import com.jhw.module.util.licence.consume.usecase_def.*;
-import com.jhw.module.util.licence.consume.usecase_impl.*;
-import com.jhw.module.util.licence.core.usecase_def.*;
+import com.root101.module.control.licence.core.usecase_def.*;
 
 /**
  * Configuracion del injection del modulo de PlanTrabajo-consume-core.

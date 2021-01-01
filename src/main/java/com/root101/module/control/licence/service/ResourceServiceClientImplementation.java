@@ -1,4 +1,4 @@
-package com.jhw.module.util.licence.service;
+package com.root101.module.control.licence.service;
 
 import com.root101.clean.core.app.services.ExceptionHandler;
 import com.root101.clean.core.domain.services.ResourceHandler;

@@ -1,4 +1,4 @@
-package com.jhw.module.util.licence.ui.module;
+package com.root101.module.control.licence.ui.module;
 
 import com.root101.clean.core.app.services.NavigationService;
 

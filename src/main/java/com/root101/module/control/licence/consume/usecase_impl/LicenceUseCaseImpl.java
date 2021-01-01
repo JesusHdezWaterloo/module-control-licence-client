@@ -3,13 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jhw.module.util.licence.consume.usecase_impl;
+package com.root101.module.control.licence.consume.usecase_impl;
 
 import com.root101.clean.core.app.usecase.DefaultCRUDUseCase;
-import com.jhw.module.util.licence.consume.module.LicenceConsumeCoreModule;
-import com.jhw.module.util.licence.consume.repo_impl.*;
-import com.jhw.module.util.licence.consume.usecase_def.*;
-import com.jhw.module.util.licence.core.domain.*;
+import com.root101.module.control.licence.consume.module.LicenceConsumeCoreModule;
+import com.root101.module.control.licence.core.domain.*;
 
 /**
  *

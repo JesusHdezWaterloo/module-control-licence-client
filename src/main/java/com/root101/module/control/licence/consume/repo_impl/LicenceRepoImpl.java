@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jhw.module.util.licence.consume.repo_impl;
+package com.root101.module.control.licence.consume.repo_impl;
 
-import static com.jhw.module.util.licence.core.ModuleLicenceConstants.*;
-import com.jhw.module.util.licence.core.domain.LicenceDomain;
-import com.jhw.module.util.licence.core.usecase_def.LicenceUseCase;
+import static com.root101.module.control.licence.core.ModuleLicenceConstants.*;
+import com.root101.module.control.licence.core.domain.LicenceDomain;
+import com.root101.module.control.licence.core.usecase_def.LicenceUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
 import com.jhw.utils.spring.client.ConsumerRepoTemplate;
 import org.springframework.web.client.RestOperations;

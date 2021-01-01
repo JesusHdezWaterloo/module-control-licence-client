@@ -1,4 +1,4 @@
-package com.jhw.module.util.licence.ui.module;
+package com.root101.module.control.licence.ui.module;
 
 import com.root101.clean.core.app.services.NotificationHandler;
 import com.root101.clean.core.app.services.NotificationsGeneralType;
@@ -7,12 +7,12 @@ import com.root101.clean.swing.app.AbstractSwingApplication;
 import com.root101.clean.swing.app.DefaultAbstractSwingMainModule;
 import com.root101.clean.swing.app.dashboard.DashBoardSimple;
 import com.root101.clean.swing.app.dashboard.DashboardConstants;
-import com.jhw.module.util.licence.consume.module.LicenceConsumeCoreModule;
-import com.jhw.module.util.licence.core.usecase_def.LicenceUseCase;
-import com.jhw.module.util.licence.service.ResourceKeys;
-import com.jhw.module.util.licence.service.ResourceServiceClientImplementation;
-import com.jhw.module.util.licence.services.LicenceResourceService;
+import com.root101.module.control.licence.consume.module.LicenceConsumeCoreModule;
+import com.root101.module.control.licence.core.usecase_def.LicenceUseCase;
+import com.root101.module.control.licence.service.ResourceKeys;
+import com.root101.module.control.licence.service.ResourceServiceClientImplementation;
 import com.jhw.swing.material.standards.MaterialIcons;
+import com.root101.module.control.licence.services.LicenceResourceService;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 

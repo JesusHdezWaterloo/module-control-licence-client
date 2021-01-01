@@ -1,4 +1,4 @@
-package com.jhw.module.util.licence.consume.module;
+package com.root101.module.control.licence.consume.module;
 
 import com.root101.clean.core.app.modules.DefaultAbstractModule;
 import com.google.inject.Guice;
