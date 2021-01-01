@@ -1,7 +1,7 @@
-rootProject.name = 'module-util-licence-client'
+rootProject.name = 'module-control-licence-client'
 
-include ':clean-core-full'
-project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
+include ':clean-core'
+project(':clean-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core" as File
 
 include ':utils-spring'
 project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-spring" as File
@@ -48,5 +48,5 @@ project(':utils-files').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradl
 include ':module-util-rest_config'
 project(':module-util-rest_config').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-rest_config" as File
 
-include ':module-util-licence-standard'
-project(':module-util-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-licence-standard" as File
+include ':module-control-licence-standard'
+project(':module-control-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-control-licence-standard" as File
