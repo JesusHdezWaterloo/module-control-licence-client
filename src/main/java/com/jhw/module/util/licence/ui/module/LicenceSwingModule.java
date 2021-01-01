@@ -1,12 +1,12 @@
 package com.jhw.module.util.licence.ui.module;
 
-import com.clean.core.app.services.Notification;
-import com.clean.core.app.services.NotificationsGeneralType;
-import com.clean.core.domain.services.Resource;
-import com.clean.swing.app.AbstractSwingApplication;
-import com.clean.swing.app.DefaultAbstractSwingMainModule;
-import com.clean.swing.app.dashboard.DashBoardSimple;
-import com.clean.swing.app.dashboard.DashboardConstants;
+import com.root101.clean.core.app.services.NotificationHandler;
+import com.root101.clean.core.app.services.NotificationsGeneralType;
+import com.root101.clean.core.domain.services.ResourceHandler;
+import com.root101.clean.swing.app.AbstractSwingApplication;
+import com.root101.clean.swing.app.DefaultAbstractSwingMainModule;
+import com.root101.clean.swing.app.dashboard.DashBoardSimple;
+import com.root101.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.module.util.licence.consume.module.LicenceConsumeCoreModule;
 import com.jhw.module.util.licence.core.usecase_def.LicenceUseCase;
 import com.jhw.module.util.licence.service.ResourceKeys;
@@ -48,12 +48,12 @@ public class LicenceSwingModule extends DefaultAbstractSwingMainModule {
 
         dash.putKeyValue(DashboardConstants.DOWN_LICENCE,
                 new AbstractAction(
-                        licenceUC.daysUntilActivation() + " " + Resource.getString(ResourceKeys.MSG_DAY_TO_ACTIVE
+                        licenceUC.daysUntilActivation() + " " + ResourceHandler.getString(ResourceKeys.MSG_DAY_TO_ACTIVE
                 ),
                         MaterialIcons.SECURITY.deriveIcon(16)) {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Notification.showConfirmDialog(NotificationsGeneralType.CONFIRM_ERROR, "ACTIVAR LICENCIA");
+                NotificationHandler.showConfirmDialog(NotificationsGeneralType.CONFIRM_ERROR, "ACTIVAR LICENCIA");
             }
         });
     }

@@ -5,7 +5,7 @@
  */
 package com.jhw.module.util.licence.consume.usecase_impl;
 
-import com.clean.core.app.usecase.*;
+import com.root101.clean.core.app.usecase.DefaultCRUDUseCase;
 import com.jhw.module.util.licence.consume.module.LicenceConsumeCoreModule;
 import com.jhw.module.util.licence.consume.repo_impl.*;
 import com.jhw.module.util.licence.consume.usecase_def.*;

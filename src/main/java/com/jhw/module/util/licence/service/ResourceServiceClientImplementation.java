@@ -1,10 +1,10 @@
 package com.jhw.module.util.licence.service;
 
-import com.clean.core.app.services.ExceptionHandler;
-import com.clean.core.domain.services.Resource;
-import com.clean.core.domain.services.ResourceBundleUtils;
-import com.clean.core.domain.services.ResourceService;
-import com.clean.core.domain.services.DefaultResourceBundleService;
+import com.root101.clean.core.app.services.ExceptionHandler;
+import com.root101.clean.core.domain.services.ResourceHandler;
+import com.root101.clean.core.domain.services.ResourceBundleUtils;
+import com.root101.clean.core.domain.services.ResourceService;
+import com.root101.clean.core.domain.services.DefaultResourceBundleService;
 import java.net.MalformedURLException;
 
 /**
@@ -20,7 +20,7 @@ public class ResourceServiceClientImplementation implements ResourceService {
     public static ResourceServiceClientImplementation init() {
         try {
             ResourceServiceClientImplementation res = new ResourceServiceClientImplementation();
-            Resource.registerResourceService(res);
+            ResourceHandler.registerResourceService(res);
             return res;
         } catch (Exception e) {
             ExceptionHandler.handleException(e);
