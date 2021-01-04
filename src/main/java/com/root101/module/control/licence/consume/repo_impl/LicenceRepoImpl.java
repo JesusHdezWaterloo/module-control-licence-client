@@ -16,7 +16,7 @@
  */
 package com.root101.module.control.licence.consume.repo_impl;
 
-import static com.root101.module.control.licence.core.ModuleLicenceConstants.*;
+import static com.root101.module.control.licence.rest.ModuleLicenceRESTConstants.*;
 import com.root101.module.control.licence.core.domain.LicenceDomain;
 import com.root101.module.control.licence.core.usecase_def.LicenceUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
