@@ -27,7 +27,7 @@ import com.root101.module.control.licence.consume.module.LicenceConsumeCoreModul
 import com.root101.module.control.licence.core.usecase_def.LicenceUseCase;
 import com.root101.module.control.licence.service.ResourceKeys;
 import com.root101.module.control.licence.service.ResourceServiceClientImplementation;
-import com.jhw.swing.material.standards.MaterialIcons;
+import com.root101.swing.material.standards.MaterialIcons;
 import com.root101.module.control.licence.services.LicenceResourceService;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
